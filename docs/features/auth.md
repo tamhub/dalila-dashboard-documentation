@@ -11,7 +11,7 @@ We use Single Sign On (SSO) using Nafath to authenticate the user.
 We follow the [0Auth](https://oauth.net/2/) protocol to integrate the SSO flow with Nafath. For more detailed info refer to:
 
 - [0Auth Documentation](https://oauth.net/2/)
-
+- Saudi Smart ID Integration Guide
 <object data={require("../assets/Saudi_Smart_ID_OIDC_Integration_Guide_V1.pdf").default} type="application/pdf" width="100%" height="500px">
 
   Unable to display PDF file. <a href={require("../assets/Saudi_Smart_ID_OIDC_Integration_Guide_V1.pdf").default}>Download</a> instead
