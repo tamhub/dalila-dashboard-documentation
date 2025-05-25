@@ -1,0 +1,8 @@
+{
+	"label": "Content management",
+	"position": 12,
+	"link": {
+		"type": "generated-index",
+		"description": "Represents the dynamic data that can be shown for specific sections on the mobile app."
+	}
+}
