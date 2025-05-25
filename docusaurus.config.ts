@@ -73,7 +73,7 @@ const config: Config = {
 					label: 'Docs',
 				},
 				{
-					href: 'https://github.com/facebook/docusaurus',
+					href: 'https://github.com/tamhub/dalila-dashboard-documentation',
 					label: 'GitHub',
 					position: 'right',
 				},
