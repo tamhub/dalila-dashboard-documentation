@@ -1,6 +1,10 @@
-# Website
+# Dalila Dashboard Documentation
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+## Live Docs
+
+- [Live Site](https://tamhub.github.io/dalila-dashboard-documentation/)
 
 ### Installation
 
