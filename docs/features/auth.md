@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Authentication
 
-We use Single Sign On (SSO) using Nafath to authenticate the user.
+We use Single Sign On (SSO) to authenticate the user.
 
 ## 0Auth2
 
-We follow the [0Auth](https://oauth.net/2/) protocol to integrate the SSO flow with Nafath. For more detailed info refer to:
+We follow the [0Auth](https://oauth.net/2/) protocol to integrate the SSO. For more detailed info refer to:
 
 - [0Auth Documentation](https://oauth.net/2/)
 - Saudi Smart ID Integration Guide
@@ -33,7 +33,7 @@ The login flow using SSO (Single Sign-On) is as follows:
    - The `code_verifier` is stored in the browser's local storage for later use.
 
 3. **Redirect to SSO Provider**
-   - The user is redirected to the SSO provider (Nafath) with parameters including:
+   - The user is redirected to the SSO provider with parameters including:
      - `client_id`: The application's client ID.
      - `redirect_uri`: The URI to return to after authentication.
      - `response_type=code`: Requests an authorization code.
@@ -41,11 +41,11 @@ The login flow using SSO (Single Sign-On) is as follows:
      - `code_challenge` and `code_challenge_method=S256`: For PKCE.
      - `ui_locales`: The current language/locale.
 
-4. **User Authenticates with Nafath**
-   - The user completes authentication with Nafath (e.g., via mobile app or other means).
+4. **User Authentication**
+   - The user completes authentication with SSO (e.g., via mobile app or other means).
 
 5. **Redirect Back with Authorization Code**
-   - After successful authentication, Nafath redirects the user back to the application's `redirect_uri` with an authorization `code` in the URL.
+   - After successful authentication, visitsaudi redirects the user back to the application's `redirect_uri` with an authorization `code` in the URL.
 
 6. **Exchange Authorization Code for Tokens**
    - The frontend exchanges the received `code` and the original `code_verifier` (from local storage) with the backend or directly with the SSO provider to obtain access and ID tokens.
